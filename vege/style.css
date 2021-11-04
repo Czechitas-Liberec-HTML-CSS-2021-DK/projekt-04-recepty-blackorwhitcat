@@ -21,6 +21,8 @@ středně široké obrazovky:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: cadetblue;
 }
 
 .paticka {
@@ -38,10 +40,39 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
-.kontejner {
-    display: flex;
+.hlavni img  {
+    min-height: 200px;
+}
+
+.obrazek-vedlejsi.recept {
+    min-height: 90px;
 }
 
 .hlavni {
-    
+    position: relative;
+}
+
+.maly2 {
+    position: relative;
+}
+
+.nadpis-hlavni {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 1,75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.nadpis-salaty {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.komentare {
+    position: absolute;
+    top: 8px;
+    right: 16px;
 }
