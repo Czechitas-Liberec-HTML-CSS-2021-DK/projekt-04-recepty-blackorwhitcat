@@ -21,7 +21,6 @@ středně široké obrazovky:
 body {
     margin: 0;
     color: white;
-    background-color: cadetblue;
 }
 
 .paticka {
@@ -43,61 +42,67 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
-    
 }
 
 .hlavni {
-    max-width: inherit;
-    min-height: 200px;
-    display:block;
+    position: relative;
+    margin-bottom: -2px;
 }
 
 .maly {
-    
-    min-height: 90px;
-    display:block;
+    position: relative;
+    margin-bottom: -2px;
 }
 
-.hlavni {
-    position: relative;
-}
-
-.maly2 {
-    position: relative;
-}
 
 .nadpis-hlavni {
     position: absolute;
-    bottom: 8px;
+    bottom: 16px;
     left: 16px;
-    font-size: 1,75rem;
+    font-size: 1.75rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
 }
 
-.nadpis-salaty {
+.nadpis-salaty {/*platí pro všechny kategorie jídel na obr. vlevo nahoře*/
     position: absolute;
     top: 8px;
     left: 16px;
-    font-size: 0,8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.nadpis-vedlejsi {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
 .komentare {
     position: absolute;
     top: 8px;
     right: 16px;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 
 .obrazek-hlavni-recept {
     object-fit: cover;
     object-position: center;
     height: 33vh;
+    width: 100vw;
+    min-height: 200px;
 }
 
 .obrazek-vedlejsi-recept {
     object-fit: cover;
     object-position: center;
     height: 16vh;
+    width: 100vw;
+    min-height: 90px;
 }
 
 @media (min-width: 480px) {
